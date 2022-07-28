@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "İzmir";
+  src: local("İzmir"), url("./fonts/izmir/Izmir-Regular.eot") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

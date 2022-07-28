@@ -1,0 +1,44 @@
+.sorular-outer-con {
+  @include outer-white-con;
+  .sorular-con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #1a427d, #3877b4);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    h3 {
+      font-size: $primaryFontSize;
+      color: $colorWhite;
+      padding-top: 1rem;
+      font-weight: bold;
+    }
+    .sorular-inner-con {
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 4rem;
+      > * {
+        margin-bottom: 4rem;
+      }
+    }
+    h4 {
+      color: white;
+      font-weight: 600;
+      font-size: $secondaryFontSize;
+    }
+    p {
+      color: $fourthFontSize;
+      color: white;
+    }
+    image {
+      display: inline;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .sorular-outer-con {
+    height: auto;
+    width: 100% !important;
+  }
+}

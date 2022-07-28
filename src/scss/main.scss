@@ -1,0 +1,48 @@
+@import "variables";
+@import "classes";
+@import "mixins";
+@import "header";
+@import "video";
+@import "form";
+@import "iletisim";
+@import "anasayfa";
+@import "sartlar";
+@import "sorular";
+@import "question";
+@import "footer";
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0px;
+  margin-top: 30px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "İzmir";
+  src: local("Izmir-Regular"),
+    url("../fonts/izmir/Izmir-Regular.eot") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.horizontal-line {
+  width: 100%;
+  margin: 0 auto;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,39 @@
+.sartlar-outer-con {
+  @include outer-white-con;
+  .sartlar-con {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #1a427d, #3877b4);
+    margin-top: 2rem;
+    h3 {
+      text-align: center;
+      font-weight: bold;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      font-size: $primaryFontSize;
+      color: $colorWhite;
+    }
+    p {
+      width: 65%;
+      margin: 0 auto;
+      color: $colorWhite;
+      font-size: $thirdFontSize;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .sartlar-outer-con {
+    height: auto;
+    width: 100%;
+    .sartlar-con {
+      width: 85%;
+      margin-bottom: 20px;
+      p {
+        width: 85%;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

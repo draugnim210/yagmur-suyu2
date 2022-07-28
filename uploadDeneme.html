@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload</title>
+    <style>
+      .uploadButton {
+        display: flex;
+        justify-content: space-between;
+        width: 191px;
+        height: 40px;
+        border-radius: 28px;
+        border: solid 2px red;
+      }
+      input {
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 30px;
+        background-color: blue;
+      }
+      label {
+        background-color: rebeccapurple;
+        color: blue;
+        padding: 0.5rem;
+        font-family: sans-serif;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="uploadButton">
+      <input type="file" id="validate" hidden onchange="Filevalidation()" />
+      <p>Dosya Ekle</p>
+      <img src="/plus.png" alt="" />
+    </div>
+    <script>
+      Filevalidation = () => {
+        const fi = document.getElementById("validate");
+        // Check if any file is selected.
+        if (fi.files.length > 0) {
+          for (const i = 0; i <= fi.files.length - 1; i++) {
+            const fsize = fi.files.item(i).size;
+            const file = Math.round(fsize / 1024);
+            // The size of the file.
+            if (file >= 1096) {
+              alert("File too Big, please select a file less than 4mb");
+            } else {
+              alert("Dosya başarıyla yüklendi");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
